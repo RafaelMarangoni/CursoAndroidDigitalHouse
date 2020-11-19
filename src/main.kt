@@ -1,18 +1,10 @@
-import Aula10.Contrato
-import Aula10.Documento
-import Aula10.Foto
-import Aula10.Impressora
+
+import Aula11.Pessoa
 
 fun main() {
 
-    var foto = Foto("Selfie", "Foto")
-    var contrato = Contrato("15k", "contrato rulez")
-    var documento = Documento("Doc", "pdf")
-    var impressora = Impressora()
+   val pessoa = Pessoa("teste",9999999)
+   val pessoa1 = Pessoa("teste1", 9999999)
 
-    impressora.adicionaImpressao(foto)
-    impressora.adicionaImpressao(contrato)
-    impressora.adicionaImpressao(documento)
-
-    impressora.imprimirLista()
+    println(pessoa.equals(pessoa1))
 }
